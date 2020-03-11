@@ -85,12 +85,11 @@ p {
 }
 #login, .logo{
     display:inline-block;
-    width:40%;
 }
 #login{
 border-right:1px solid #fff;
   padding: 0px 22px;
-  width: 59%;
+  width: 100%;
 }
 .logo{
 color:#fff;
@@ -98,6 +97,9 @@ font-size:50px;
   line-height: 125px;
   padding: 25px;
   font-weight: bold;
+}
+.logo img{
+  max-width: 60%;
 }
 
 #login form span.fa {
@@ -158,4 +160,20 @@ fieldset{
 .middle {
   display: flex;
   width: 600px;
+}
+@media (max-width: 767px) {
+  #login {
+      border-right: 0px;
+  }
+  .logo {
+
+    padding: 0px;
+}
+  .logo img {
+      max-width: 40%;
+  }
+  .middle{
+    width: 100%;
+    display: grid;
+  }
 }
